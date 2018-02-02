@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_marginBottom="4dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:id="@+id/ll_ted_search_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_search_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Recommended topics"
+            android:textColor="@color/primary_dark"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_search_topic_1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+
+            <ImageView
+                android:id="@+id/iv_search_topic_vector_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_history_red_24dp" />
+
+
+            <TextView
+                android:id="@+id/tv_search_title_1"
+                style="@style/podcast_text_scales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_search_topic_vector_image"
+                android:text="Mental Health" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_search_topic_2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+
+            <ImageView
+                android:id="@+id/iv_search_topic_vector_image_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_history_red_24dp" />
+
+
+            <TextView
+                android:id="@+id/tv_search_title_2"
+                style="@style/podcast_text_scales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_search_topic_vector_image_2"
+                android:text="Mental Health" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_search_topic_3"
+            android:layout_width="match_parent"
+            android:layout_height="68dp">
+
+
+            <ImageView
+                android:id="@+id/iv_search_topic_vector_image_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_history_red_24dp" />
+
+
+            <TextView
+                android:id="@+id/tv_search_title_3"
+                style="@style/podcast_text_scales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_search_topic_vector_image_3"
+                android:text="Mental Health" />
+
+            <TextView
+                android:id="@+id/tv_search_show_more_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show all topics"
+                android:textColor="@color/primary_dark"
+                android:layout_below="@id/tv_search_title_3"
+                android:layout_alignRight="@id/tv_search_title_3"
+                android:layout_marginTop="16sp"    />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_my_talk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_ted_my_talk_login"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/divider">
+
+        <ImageView
+            android:id="@+id/iv_login_vector_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_account_circle_red_24dp" />
+
+        <TextView
+            android:id="@+id/tv_login_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/iv_login_vector_image"
+            android:text="@string/ted_login"
+            android:textColor="@color/black_full"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_account_sync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/tv_login_account_text"
+            android:layout_below="@id/tv_login_account_text"
+            android:layout_toRightOf="@id/iv_login_vector_image"
+            android:text="Sync My List,Likes and History" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/primary"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:textColor="@color/white_full" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mytalk_my_list"
+        android:layout_width="match_parent"
+        android:layout_height="68dp">
+
+
+        <ImageView
+            android:id="@+id/iv_my_list_vector_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_playlist_play_red_24dp" />
+
+
+        <TextView
+            android:id="@+id/tv_mytalk_my_list"
+            style="@style/podcast_text_scales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_my_list_vector_image"
+            android:text="My List" />
+
+        <TextView
+            android:id="@+id/tv_my_no_of_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/tv_mytalk_my_list"
+            android:layout_below="@id/tv_mytalk_my_list"
+            android:layout_toRightOf="@id/iv_my_list_vector_image"
+            android:text="No Talk" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mytalk_likes"
+        android:layout_width="match_parent"
+        android:layout_height="68dp">
+
+
+        <ImageView
+            android:id="@+id/iv_likes_vector_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_favorite_border_red_24dp" />
+
+
+        <TextView
+            android:id="@+id/tv_mytalk_likes"
+            style="@style/podcast_text_scales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_likes_vector_image"
+            android:text="Likes" />
+
+        <TextView
+            android:id="@+id/tv_likes_no_of_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/tv_mytalk_likes"
+            android:layout_below="@id/tv_mytalk_likes"
+            android:layout_toRightOf="@id/iv_likes_vector_image"
+            android:text="No Talk" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mytalk_download"
+        android:layout_width="match_parent"
+        android:layout_height="68dp">
+
+
+        <ImageView
+            android:id="@+id/iv_download_vector_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_file_download_red_24dp" />
+
+
+        <TextView
+            android:id="@+id/tv_mytalk_download"
+            style="@style/podcast_text_scales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_download_vector_image"
+            android:text="Downloads" />
+
+        <TextView
+            android:id="@+id/tv_download_no_of_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/tv_mytalk_download"
+            android:layout_below="@id/tv_mytalk_download"
+            android:layout_toRightOf="@id/iv_download_vector_image"
+            android:text="No Talk" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mytalk_history"
+        android:layout_width="match_parent"
+        android:layout_height="68dp">
+
+
+        <ImageView
+            android:id="@+id/iv_history_vector_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_history_red_24dp" />
+
+
+        <TextView
+            android:id="@+id/tv_mytalk_history"
+            style="@style/podcast_text_scales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_history_vector_image"
+            android:text="My List" />
+
+        <TextView
+            android:id="@+id/tv_history_no_of_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/tv_mytalk_history"
+            android:layout_below="@id/tv_mytalk_history"
+            android:layout_toRightOf="@id/iv_history_vector_image"
+            android:text="1 Talk" />
+    </RelativeLayout>
+
+</LinearLayout>

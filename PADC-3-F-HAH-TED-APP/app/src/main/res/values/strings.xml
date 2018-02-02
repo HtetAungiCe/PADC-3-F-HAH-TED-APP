@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TED</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="talker_names">Susan David</string>
+    <string name="title_of_app"><b>TED</b></string>
+    <string name="talk_title"><b>Could the social lives of fish help us save coral reefs?</b></string>
+    <string name="playlist_title"><b>What are emotion?</b></string>
+    <string name="ted_podcast_title"><b>Rethinking Medicine</b></string>
+    <string name="ted_podcast_brief">A gifted child.A rough neighborhood.A Teacher who know how to break the cycle.[Contains explicit content].</string>
+    <string name="ted_login">Log in to your TED account</string>
+</resources>
